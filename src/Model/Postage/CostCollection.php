@@ -44,6 +44,7 @@ final class CostCollection implements IteratorAggregate, Countable
     /**
      * @return Traversable
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new ArrayIterator($this->costs);
